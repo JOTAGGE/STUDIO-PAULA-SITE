@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { X, Clock, ExternalLink, MessageCircle, Globe, Sparkles, CheckCircle2, ArrowRight } from "lucide-react";
+import { X, Clock, ExternalLink, MessageCircle, Globe, Sparkles, AlertTriangle, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function DemoNoticeModal() {
@@ -56,7 +56,7 @@ export default function DemoNoticeModal() {
                 {/* Tag / Badge */}
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-400/20 border border-gold-500/30 text-gold-900 font-mono text-[10px] sm:text-[11px] tracking-wider uppercase font-semibold mb-3">
                   <Clock className="w-3.5 h-3.5 text-gold-700 animate-pulse" />
-                  <span>Acesso Temporário · 24 Horas</span>
+                  <span>Demonstração Exclusiva · Prazo de 7 Dias</span>
                 </div>
 
                 {/* Título Principal */}
@@ -64,12 +64,30 @@ export default function DemoNoticeModal() {
                   Demonstração Exclusiva
                 </h2>
 
-                <p className="text-ink-soft text-xs sm:text-sm leading-relaxed mb-5">
-                  Este é um <strong className="text-olive-950 font-semibold">site de demonstração</strong> criado para você conhecer toda a experiência, elegância e ferramentas que o seu negócio pode ter.
+                <p className="text-ink-soft text-xs sm:text-sm leading-relaxed mb-4">
+                  Este é um modelo personalizado preparado especialmente para você visualizar como o seu negócio pode se posicionar na internet com elegância e profissionalismo.
                 </p>
 
-                {/* Caixa de Aviso de Expiração */}
-                <div className="bg-olive-950 text-sand-100 rounded-2xl p-4 sm:p-5 mb-6 border border-olive-800 shadow-sm relative overflow-hidden">
+                {/* Caixa de Aviso Destacada - Prazo de 1 semana */}
+                <div className="bg-amber-500/10 border-2 border-amber-500/40 rounded-2xl p-4 sm:p-4 mb-4 relative overflow-hidden shadow-sm">
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/10 rounded-full blur-xl pointer-events-none" />
+                  <div className="flex items-start gap-3.5 relative z-10">
+                    <div className="p-2 rounded-xl bg-amber-500/20 text-amber-800 shrink-0 mt-0.5">
+                      <AlertTriangle className="w-4.5 h-4.5 text-amber-700" />
+                    </div>
+                    <div>
+                      <h4 className="font-sans font-bold text-amber-950 text-xs sm:text-sm uppercase tracking-wider mb-1 flex items-center gap-2">
+                        <span>Aviso Importante: Prazo de Resposta</span>
+                      </h4>
+                      <p className="text-amber-950/90 text-xs sm:text-[13px] leading-relaxed">
+                        Você tem <strong className="text-amber-950 font-bold underline decoration-amber-500/60">até 1 semana (7 dias)</strong> para nos dar uma resposta sobre a aquisição. Caso contrário, <strong className="text-amber-950 font-bold">os seus dados serão retirados</strong> e este modelo de site ficará <strong className="text-amber-950 font-bold">livre e disponível para o próximo cliente</strong>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Caixa Informativa de Exploração */}
+                <div className="bg-olive-950 text-sand-100 rounded-2xl p-4 mb-6 border border-olive-800 shadow-sm relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gold-500/10 rounded-full blur-2xl pointer-events-none" />
                   
                   <div className="flex items-start gap-3 relative z-10">
@@ -77,11 +95,11 @@ export default function DemoNoticeModal() {
                       <Sparkles className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="font-sans font-bold text-sand-50 text-xs sm:text-sm uppercase tracking-wider mb-1">
-                        Acesso por tempo limitado
+                      <h4 className="font-sans font-bold text-sand-50 text-xs uppercase tracking-wider mb-1">
+                        Explore todas as páginas
                       </h4>
-                      <p className="text-sand-300 text-xs sm:text-[13px] leading-relaxed">
-                        No <strong className="text-gold-300 font-medium">dia seguinte você não terá mais acesso</strong> a este link de teste. Dê uma boa olhada em todas as páginas, serviços, simulador de agendamento e galeria!
+                      <p className="text-sand-300 text-xs sm:text-[12.5px] leading-relaxed">
+                        Dê uma olhada em todas as seções, serviços, simulador de agendamento e galeria para conferir a experiência completa!
                       </p>
                     </div>
                   </div>
