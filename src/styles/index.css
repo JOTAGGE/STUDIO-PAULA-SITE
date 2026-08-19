@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-sand: #f5f2ea;
+    --bg-dark: #191c15;
+    --olive-primary: #373f2f;
+    --olive-accent: #4b553f;
+    --gold-accent: #c99b3d;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-[#e9e6dd] text-ink-pure font-sans antialiased selection:bg-olive-800 selection:text-sand-100;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #e4e0d5;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #5f6c51;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #373f2f;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .editorial-title {
+    @apply font-sans tracking-[-0.06em] leading-[0.88] uppercase;
+  }
+
+  .editorial-title i {
+    @apply font-serif font-normal italic lowercase;
+    letter-spacing: -0.02em;
+  }
+
+  .editorial-label {
+    @apply font-mono text-[10px] tracking-[0.25em] uppercase text-ink-muted;
+  }
+
+  .glass-dark {
+    background: rgba(38, 44, 32, 0.88);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-light {
+    background: rgba(245, 242, 234, 0.85);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(38, 44, 32, 0.08);
+  }
+}
