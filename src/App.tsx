@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/common/ScrollToTop";
+import DemoNoticeModal from "./components/common/DemoNoticeModal";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import WhatsAppFloating from "./components/layout/WhatsAppFloating";
@@ -16,6 +17,7 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
+      <DemoNoticeModal />
       <div className="min-h-screen flex flex-col bg-[#e9e6dd]">
         <Navbar />
         <main className="flex-grow">
