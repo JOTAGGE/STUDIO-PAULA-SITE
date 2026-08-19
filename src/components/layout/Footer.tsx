@@ -133,7 +133,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[10px] text-sand-400 tracking-wider">
-          <p>© {currentYear} Studio Paula Lima. Todos os direitos reservados.</p>
+          <p>© {currentYear} Studio Paula Lima. By NOMA. Todos os direitos reservados.</p>
           <div className="flex items-center gap-4">
             <span className="inline-flex items-center gap-1 text-sand-400">
               Recife / PE · Feito com cuidado & <Heart className="w-2.5 h-2.5 text-gold-400 fill-current" />
