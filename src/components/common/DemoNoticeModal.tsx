@@ -56,7 +56,7 @@ export default function DemoNoticeModal() {
                 {/* Tag / Badge */}
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-400/20 border border-gold-500/30 text-gold-900 font-mono text-[10px] sm:text-[11px] tracking-wider uppercase font-semibold mb-3">
                   <Clock className="w-3.5 h-3.5 text-gold-700 animate-pulse" />
-                  <span>Demonstração Exclusiva · 1 dia de visualização</span>
+                  <span>Demonstração Exclusiva · 7 dias de visualização</span>
                 </div>
 
                 {/* Título Principal */}
@@ -99,7 +99,7 @@ export default function DemoNoticeModal() {
                         Explore todas as páginas
                       </h4>
                       <p className="text-sand-300 text-xs sm:text-[12.5px] leading-relaxed">
-                        Dê uma olhada em todas as seções, serviços, simulador de agendamento e galeria para conferir a experiência completa! O acesso ao site será desativado no dia seguinte. Entre em contato para visualizar novamente.
+                        Dê uma olhada em todas as seções, serviços, simulador de agendamento e galeria para conferir a experiência completa!
                       </p>
                     </div>
                   </div>
