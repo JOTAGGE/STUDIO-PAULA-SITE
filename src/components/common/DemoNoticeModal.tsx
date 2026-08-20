@@ -21,7 +21,7 @@ export default function DemoNoticeModal() {
       {/* Modal Popup Principal */}
       <AnimatePresence>
         {isOpen && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5">
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-5">
             {/* Backdrop com Blur */}
             <motion.div
               initial={{ opacity: 0 }}

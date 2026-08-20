@@ -36,7 +36,7 @@ export default function LightboxModal({
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-olive-950/95 backdrop-blur-xl">
+      <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 bg-olive-950/95 backdrop-blur-xl">
         <button
           onClick={onClose}
           className="absolute top-6 right-6 z-50 p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
